@@ -78,20 +78,21 @@ ol {
 .search-form {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: start;
   gap: 40px;
 }
 
 .search-form__fieldset {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
   border: none;
 }
 
 .search-form__fieldset-title {
   font-family: Fira Sans Condensed;
   font-size: 18px;
+  font-weight: 400;
   margin-bottom: 7px;
 }
 
@@ -167,6 +168,11 @@ ol {
   block-size: 34px;
   cursor: pointer;
   padding: 6px 77px;
+  text-align: center;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .button:focus {
@@ -183,6 +189,11 @@ ol {
 
 .button:focus-visible {
   outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+.search-form__submit-button {
+  align-self: end;
 }
 
 .more-button {
