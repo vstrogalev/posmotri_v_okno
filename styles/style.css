@@ -106,7 +106,7 @@ ol {
   cursor: pointer;
 }
 
-.search-form__label .search-form__textfield:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
 }
 
@@ -123,10 +123,10 @@ ol {
   padding: 2px;
   appearance: none;
   background-color: transparent;
-  color: #fff;
+  color: currentColor;
   border: none;
-  border-top: 1px solid #FFF;
-  border-bottom: 1px solid #FFF;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
 }
 
 .search-form__textfield:active {
@@ -211,10 +211,9 @@ ol {
 }
 
 .title {
-  color: #FFF;
+  color: inherit;
   font-family: 'Oswald', Arial, Helvetica, sans-serif;
   font-size: 75px;
-  font-style: normal;
   font-weight: 700;
   line-height: 94%;
   text-transform: uppercase;
@@ -227,6 +226,7 @@ ol {
 .content__list {
   position: relative;
   max-block-size: 298px;
+  min-inline-size: 399px;
   overflow: auto;
   display: flex;
   flex-direction: column;
